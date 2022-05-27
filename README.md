@@ -1,29 +1,17 @@
-# README #
+# Canstar Frontend Test
 
-    This README would normally document whatever steps are necessary to get your application up and running.
+## Task
 
-    ### What is this repository for? ###
+This application currently contains boilerplate code for an Angular app. Your task is to add code to necessary files in order to display data consumed from a provided API in some 
+meaningful way, this could be a list or table for example. 
 
-    * Quick summary
-    * Version
-    * [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+The `products` directory has been created to contain the products component (how data will be displayed), and the `services` directory has been created to contain the code to 
+consume the data (also includes the API endpoint).
 
-    ### How do I get set up? ###
+## Development server 
 
-    * Summary of set up
-    * Configuration
-    * Dependencies
-    * Database configuration
-    * How to run tests
-    * Deployment instructions
+In order to run this application you will need both [Node.js](https://nodejs.org/en/) and [Angular CLI](https://angular.io/cli) installed locally.
 
-    ### Contribution guidelines ###
+Run `npm install` prior to running application for the first time.
 
-    * Writing tests
-    * Code review
-    * Other guidelines
-
-    ### Who do I talk to? ###
-
-    * Repo owner or admin
-    * Other community or team contact
+Run `npm start` or `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
