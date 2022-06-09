@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -14,6 +14,6 @@ export class ProductsService {
 
   // code to make http request should be contained in here
   public getProducts(): Observable<any> {
-   
+   return of('placeholder return');
   }
 }
