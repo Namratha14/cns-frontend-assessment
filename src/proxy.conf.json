@@ -1,0 +1,8 @@
+{
+    "/api": {
+      "target": "https://api.commbank.com.au",
+      "secure": true,
+      "changeOrigin": true,
+      "pathRewrite": { "^/api": "" }
+    }
+  }

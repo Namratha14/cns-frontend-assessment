@@ -1,3 +1,30 @@
-<div>
-    Data should be displayed here
-</div>
+<template>
+<div *ngIf="!isLoading; else loading">
+    <!-- Component content -->
+     <div class="wrapper">
+        <div>ID</div>
+        <div>Name</div>
+        <div>Brand Name</div>
+        <div>Category</div>
+        <div>Description</div>
+     </div>
+    <div *ngFor="let product of products" class="wrapper">
+        <div>{{ product.productId}}</div>
+        <div>{{ product.name }}</div>
+        <div>{{ product.brand }}</div>
+        <div>{{ product.productCategory }}</div>
+        <div>{{ product.description }}</div>
+    </div>
+  </div>
+</template>
+  <ng-template #loading>
+    <div class="wrapper">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+  </ng-template>
+  
+   
