@@ -1,4 +1,3 @@
-<template>
 <div *ngIf="!isLoading; else loading">
     <!-- Component content -->
      <div class="wrapper">
@@ -16,7 +15,6 @@
         <div>{{ product.description }}</div>
     </div>
   </div>
-</template>
   <ng-template #loading>
     <div class="wrapper">
         <div></div>
