@@ -3,7 +3,7 @@
     <p class="error">{{ errorMessage }}</p>
   </div>
   
-  <div>
+  <div *ngIf="!isLoading && !errorMessage">
     <h1 role="banner" class="header">Products</h1>
     <div class="content">
         <table>
