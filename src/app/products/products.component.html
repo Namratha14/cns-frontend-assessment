@@ -3,7 +3,7 @@
     <p class="error">{{ errorMessage }}</p>
   </div>
   
-  <div *ngIf="!isLoading && !errorMessage">
+  <div>
     <h1 role="banner" class="header">Products</h1>
     <div class="content">
         <table>
@@ -17,13 +17,13 @@
             </tr>
         </thead>
         <tbody>
-                <tr *ngFor="let product of products">
-                    <td>{{ product.productId}}</td>
-                    <td>{{ product.name }}</td>
-                    <td>{{ product.brand }}</td>
-                    <td>{{ product.productCategory }}</td>
-                    <td>{{ product.description }}</td>
-                </tr>
+            <tr *ngFor="let product of products">
+                <td>{{ product.productId}}</td>
+                <td>{{ product.name }}</td>
+                <td>{{ product.brand }}</td>
+                <td>{{ product.productCategory }}</td>
+                <td>{{ product.description }}</td>
+            </tr>
             </tbody>
         </table>
     </div>

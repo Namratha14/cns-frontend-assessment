@@ -28,4 +28,5 @@ export class ProductsService {
       throw(`Failed to fetch products. Please try again later ${error}`);
     }
   }
+
 }
