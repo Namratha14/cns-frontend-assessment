@@ -7,23 +7,23 @@
     <h1 role="banner" class="header">Products</h1>
     <div class="content">
         <table>
-        <thead>
-            <tr>
-            <th scope="col">ID</th>
-            <th scope="col">Name</th>
-            <th scope="col">Brand</th>
-            <th scope="col">Category</th>
-            <th scope="col">Description</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr *ngFor="let product of products">
-                <td>{{ product.productId}}</td>
-                <td>{{ product.name }}</td>
-                <td>{{ product.brand }}</td>
-                <td>{{ product.productCategory }}</td>
-                <td>{{ product.description }}</td>
-            </tr>
+            <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Brand</th>
+                    <th scope="col">Category</th>
+                    <th scope="col">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let product of products">
+                    <td data-label="ID">{{ product.productId }}</td>
+                    <td data-label="Name">{{ product.name }}</td>
+                    <td data-label="Brand">{{ product.brand }}</td>
+                    <td data-label="Category">{{ product.productCategory }}</td>
+                    <td data-label="Description">{{ product.description }}</td>
+                </tr>
             </tbody>
         </table>
     </div>
