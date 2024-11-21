@@ -17,12 +17,15 @@ export class ProductsComponent implements OnInit {
   products: Products[] = [];
   constructor(private service: ProductsService) { }
   isLoading = true;
+  errorMessage: string | null = null;
   ngOnInit(): void {
     (this.service.getProducts()).subscribe((products: ProductResponse) => {
-      console.log(products.data.products)
       this.products = products.data.products;
-      console.log(this.products)
       this.isLoading = false;
+      },
+      (error) => {
+        this.isLoading = false;
+        this.errorMessage = `An error occurred while fetching products. ${error.message}`;
       });
   }
 }

@@ -1,5 +1,9 @@
 
-<div *ngIf="!isLoading; else loading">
+<div *ngIf="errorMessage" class="error">
+    <p class="error">{{ errorMessage }}</p>
+  </div>
+  
+  <div *ngIf="!isLoading && !errorMessage">
     <h1 role="banner" class="header">Products</h1>
     <div class="content">
         <table>
